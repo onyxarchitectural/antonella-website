@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Antonella Roas | Psicóloga Infantil Coral Gables FL</title>
+<meta name="description" content="Psicóloga infantil especializada en estimulación temprana, integración sensorial y metodología Montessori. Atendiendo niños de 3 meses a 9 años en Coral Gables, Miami FL.">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+:root{--rosa:#E8798A;--rosa-light:#F5A8B4;--rosa-pale:#FEF0F2;--lima:#C8D43A;--turquesa:#4BB8D4;--navy:#1E2D5A;--cream:#FDFAF7;--text:#2D2D2D;--text-light:#6B6B6B;}
+html{scroll-behavior:smooth;}
+body{background:var(--cream);color:var(--text);font-family:'Poppins',sans-serif;font-weight:400;overflow-x:hidden;}
+nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:14px 24px;display:flex;justify-content:space-between;align-items:center;background:rgba(255,255,255,0.96);backdrop-filter:blur(10px);border-bottom:2px solid var(--rosa-pale);box-shadow:0 2px 20px rgba(232,121,138,0.1);}
+.logo-nav{display:flex;align-items:center;gap:10px;}
+.logo-nav img{height:32px;width:auto;}
+.logo-text{font-family:'Poppins',sans-serif;font-size:12px;font-weight:700;color:var(--navy);line-height:1.2;}
+.logo-text span{color:var(--rosa);}
+.logo-text small{font-size:9px;font-weight:300;color:#9E9E9E;letter-spacing:1px;display:block;}
+.nav-links{display:none;}
+.nav-right{display:flex;align-items:center;gap:8px;}
+.lang-btn{font-size:11px;color:var(--rosa);border:1px solid var(--rosa);padding:5px 12px;border-radius:20px;text-decoration:none;font-weight:600;transition:all 0.3s;}
+.lang-btn:hover{background:var(--rosa);color:white;}
+.nav-cta{background:var(--rosa);color:white;padding:9px 18px;border-radius:50px;font-size:12px;font-weight:600;text-decoration:none;transition:all 0.3s;}
+.nav-cta:hover{background:var(--rosa-light);}
+.hero{min-height:100vh;padding:100px 24px 60px;position:relative;overflow:hidden;background:linear-gradient(135deg,var(--rosa-pale) 0%,#FFF8E7 50%,#F0F9FF 100%);}
+.shape{position:absolute;border-radius:50%;opacity:0.12;pointer-events:none;}
+.s1{width:400px;height:400px;background:var(--rosa);top:-100px;right:-80px;}
+.s2{width:200px;height:200px;background:var(--lima);bottom:100px;left:-60px;}
+.s3{width:150px;height:150px;background:var(--turquesa);top:40%;right:5%;}
+.hero-inner{position:relative;z-index:2;}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:white;border:2px solid var(--lima);border-radius:50px;padding:8px 18px;margin-bottom:24px;box-shadow:0 4px 15px rgba(200,212,58,0.2);}
+.pulse{width:8px;height:8px;background:var(--lima);border-radius:50%;animation:pulse 2s infinite;}
+@keyframes pulse{0%,100%{transform:scale(1);}50%{transform:scale(1.4);}}
+.badge-text{font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--navy);}
+.hero h1{font-family:'Poppins',sans-serif;font-size:clamp(32px,8vw,58px);font-weight:700;line-height:1.15;margin-bottom:20px;color:var(--navy);}
+.hero h1 em{font-style:normal;color:var(--rosa);}
+.hl{position:relative;display:inline-block;}
+.hl::after{content:'';position:absolute;bottom:-3px;left:0;right:0;height:4px;background:var(--lima);border-radius:2px;}
+.hero-desc{font-size:15px;line-height:1.8;color:var(--text-light);max-width:480px;margin-bottom:32px;font-weight:300;}
+.hero-ctas{display:flex;flex-direction:column;gap:14px;align-items:flex-start;margin-bottom:32px;}
+.btn-primary{background:var(--rosa);color:white;padding:15px 34px;border-radius:50px;font-size:13px;font-weight:600;text-decoration:none;display:inline-block;transition:all 0.3s;box-shadow:0 8px 25px rgba(232,121,138,0.4);}
+.btn-primary:hover{background:var(--rosa-light);transform:translateY(-2px);}
+.btn-sec{color:var(--turquesa);font-size:13px;font-weight:600;text-decoration:none;display:inline-flex;align-items:center;gap:6px;}
+.hero-stats{display:flex;gap:14px;flex-wrap:wrap;}
+.stat{background:white;border-radius:14px;padding:12px 16px;box-shadow:0 4px 20px rgba(0,0,0,0.06);border-left:4px solid var(--rosa);}
+.stat-num{font-size:20px;font-weight:700;color:var(--rosa);}
+.stat-lbl{font-size:10px;color:var(--text-light);font-weight:600;text-transform:uppercase;letter-spacing:1px;}
+.hero-photo{margin-top:36px;text-align:center;}
+.hero-photo img{width:78%;max-width:320px;border-radius:24px;box-shadow:0 20px 60px rgba(232,121,138,0.25);}
+.cert-strip{background:var(--rosa);padding:14px 24px;overflow-x:auto;}
+.cert-inner{display:flex;align-items:center;gap:20px;min-width:max-content;}
+.cert-item{display:flex;align-items:center;gap:8px;}
+.cert-icon{width:26px;height:26px;border:2px solid white;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:700;color:white;flex-shrink:0;}
+.cert-text{font-size:10px;letter-spacing:1.5px;text-transform:uppercase;font-weight:600;color:white;white-space:nowrap;}
+.cert-div{width:1px;height:18px;background:rgba(255,255,255,0.4);flex-shrink:0;}
+.section{padding:80px 24px;}
+.section.alt{background:white;}
+.eyebrow{font-size:11px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:var(--rosa);margin-bottom:12px;}
+.sec-title{font-size:clamp(24px,5vw,38px);font-weight:700;line-height:1.2;color:var(--navy);margin-bottom:16px;}
+.sec-title em{font-style:normal;color:var(--turquesa);}
+.sec-desc{font-size:15px;line-height:1.8;color:var(--text-light);max-width:540px;margin-bottom:44px;font-weight:300;}
+.svc-grid{display:flex;flex-direction:column;gap:20px;}
+.svc-card{background:white;border-radius:22px;padding:28px 24px;transition:all 0.3s;position:relative;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.05);}
+.svc-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;}
+.c1::before{background:var(--rosa);}
+.c2::before{background:var(--lima);}
+.c3::before{background:var(--turquesa);}
+.svc-card:hover{transform:translateY(-4px);box-shadow:0 18px 45px rgba(232,121,138,0.12);}
+.svc-emoji{font-size:36px;margin-bottom:14px;display:block;}
+.svc-name{font-size:19px;font-weight:600;color:var(--navy);margin-bottom:8px;}
+.svc-text{font-size:14px;line-height:1.8;color:var(--text-light);margin-bottom:14px;font-weight:300;}
+.tags{display:flex;flex-wrap:wrap;gap:7px;}
+.tag{font-size:11px;font-weight:600;padding:4px 11px;border-radius:20px;}
+.tag.r{background:var(--rosa-pale);color:var(--rosa);}
+.tag.l{background:#F5F8CC;color:#7A8A00;}
+.tag.t{background:#E8F7FB;color:#2A8FA6;}
+.about-grid{display:flex;flex-direction:column;gap:40px;}
+.about-img{position:relative;}
+.about-img img{width:100%;border-radius:22px;display:block;box-shadow:0 16px 45px rgba(0,0,0,0.1);}
+.about-badge{position:absolute;bottom:18px;left:18px;background:white;border-radius:14px;padding:11px 16px;box-shadow:0 6px 25px rgba(0,0,0,0.12);}
+.ab-name{font-size:13px;font-weight:700;color:var(--navy);}
+.ab-sub{font-size:11px;color:var(--text-light);}
+.creds{display:flex;flex-direction:column;gap:14px;margin-top:26px;}
+.cred{display:flex;align-items:center;gap:13px;}
+.cred-ic{width:42px;height:42px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:19px;flex-shrink:0;}
+.cred-ic.r{background:var(--rosa-pale);}
+.cred-ic.l{background:#F5F8CC;}
+.cred-ic.t{background:#E8F7FB;}
+.cred-title{font-size:14px;font-weight:600;color:var(--navy);}
+.cred-sub{font-size:12px;color:var(--text-light);}
+.shop-grid{display:flex;flex-direction:column;gap:20px;}
+.prod{background:white;border-radius:20px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.06);transition:all 0.3s;}
+.prod:hover{transform:translateY(-4px);}
+.prod-img{height:160px;display:flex;align-items:center;justify-content:center;font-size:65px;}
+.prod-img.r{background:var(--rosa-pale);}
+.prod-img.l{background:#F5F8CC;}
+.prod-img.t{background:#E8F7FB;}
+.prod-info{padding:18px;}
+.prod-age{font-size:10px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--rosa);margin-bottom:6px;}
+.prod-name{font-size:16px;font-weight:600;color:var(--navy);margin-bottom:8px;}
+.prod-desc{font-size:13px;line-height:1.6;color:var(--text-light);margin-bottom:14px;font-weight:300;}
+.prod-foot{display:flex;align-items:center;justify-content:space-between;}
+.prod-price{font-size:21px;font-weight:700;color:var(--rosa);}
+.btn-cart{background:var(--navy);color:white;padding:9px 18px;border-radius:50px;font-size:12px;font-weight:600;border:none;cursor:pointer;transition:all 0.3s;font-family:'Poppins',sans-serif;}
+.btn-cart:hover{background:var(--rosa);}
+.blog-grid{display:flex;flex-direction:column;gap:20px;}
+.blog{background:white;border-radius:20px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.06);transition:all 0.3s;}
+.blog:hover{transform:translateY(-4px);}
+.blog-img{height:140px;display:flex;align-items:center;justify-content:center;font-size:50px;position:relative;}
+.blog-img.r{background:linear-gradient(135deg,var(--rosa-pale),#FFD6DE);}
+.blog-img.l{background:linear-gradient(135deg,#F5F8CC,#E8EDAA);}
+.blog-img.t{background:linear-gradient(135deg,#E8F7FB,#B8E8F5);}
+.blog-cat{position:absolute;top:12px;left:12px;background:white;border-radius:20px;padding:4px 12px;font-size:10px;font-weight:600;letter-spacing:1px;text-transform:uppercase;}
+.blog-cat.r{color:var(--rosa);}
+.blog-cat.l{color:#7A8A00;}
+.blog-cat.t{color:#2A8FA6;}
+.blog-body{padding:16px;}
+.blog-title{font-size:15px;font-weight:600;color:var(--navy);margin-bottom:8px;line-height:1.4;}
+.blog-excerpt{font-size:13px;line-height:1.6;color:var(--text-light);font-weight:300;}
+.blog-foot{padding:13px 16px;border-top:1px solid var(--rosa-pale);display:flex;justify-content:space-between;align-items:center;}
+.blog-date{font-size:11px;color:var(--text-light);}
+.blog-link{font-size:12px;font-weight:600;color:var(--rosa);text-decoration:none;}
+.contact-section{background:linear-gradient(135deg,var(--navy) 0%,#2A3F7A 100%);color:white;padding:80px 24px;}
+.contact-section .eyebrow{color:var(--lima);}
+.contact-section .sec-title{color:white;}
+.contact-section .sec-desc{color:rgba(255,255,255,0.7);}
+.c-grid{display:flex;flex-direction:column;gap:40px;}
+.c-item{display:flex;align-items:center;gap:14px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,0.1);}
+.c-icon{width:42px;height:42px;background:rgba(232,121,138,0.2);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;}
+.c-lbl{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--lima);margin-bottom:2px;}
+.c-val{font-size:14px;color:white;}
+.c-val a{color:white;text-decoration:none;}
+.cform{display:flex;flex-direction:column;gap:14px;}
+.fg{display:flex;flex-direction:column;gap:6px;}
+.flbl{font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--lima);}
+.finp{background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);color:white;padding:13px 16px;border-radius:12px;font-size:14px;font-family:'Poppins',sans-serif;outline:none;transition:border-color 0.3s;-webkit-appearance:none;appearance:none;}
+.finp:focus{border-color:var(--rosa);}
+.finp::placeholder{color:rgba(255,255,255,0.35);}
+.finp option{background:var(--navy);}
+.f2{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+textarea.finp{height:90px;resize:none;}
+.btn-sub{background:var(--rosa);color:white;border:none;padding:16px;border-radius:50px;font-size:13px;font-weight:600;cursor:pointer;width:100%;transition:all 0.3s;font-family:'Poppins',sans-serif;}
+.btn-sub:hover{background:var(--rosa-light);}
+.ty{display:none;text-align:center;padding:36px;background:rgba(255,255,255,0.05);border-radius:20px;border:1px solid rgba(232,121,138,0.3);}
+.ty.on{display:block;}
+.ty h3{font-size:24px;font-weight:700;color:var(--rosa);margin-bottom:10px;}
+.ty p{color:rgba(255,255,255,0.7);font-size:14px;line-height:1.7;}
+.wa-float{position:fixed;bottom:28px;right:20px;z-index:999;display:flex;flex-direction:column;align-items:flex-end;gap:10px;}
+.wa-lbl{background:white;border:2px solid var(--rosa-pale);border-radius:50px;padding:7px 14px;font-size:12px;font-weight:600;color:var(--navy);box-shadow:0 4px 15px rgba(0,0,0,0.1);}
+.wa-btn{width:56px;height:56px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 24px rgba(37,211,102,0.4);text-decoration:none;transition:transform 0.3s;}
+.wa-btn:hover{transform:scale(1.1);}
+.wa-btn svg{width:28px;height:28px;fill:white;}
+footer{background:var(--navy);padding:36px 24px;text-align:center;display:flex;flex-direction:column;gap:8px;align-items:center;}
+.ft-logo{font-size:18px;font-weight:700;color:var(--rosa);}
+.ft-sub{font-size:12px;color:rgba(255,255,255,0.5);}
+.ft-copy{font-size:11px;color:rgba(255,255,255,0.25);}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity 0.6s ease,transform 0.6s ease;}
+.reveal.visible{opacity:1;transform:translateY(0);}
+@media(min-width:768px){
+nav{padding:20px 60px;}
+.nav-links{display:flex;gap:28px;list-style:none;}
+.nav-links a{color:var(--text-light);text-decoration:none;font-size:13px;font-weight:500;transition:color 0.3s;}
+.nav-links a:hover{color:var(--rosa);}
+.hero{padding:100px 60px 60px;display:flex;align-items:center;gap:60px;}
+.hero-inner{flex:1;}
+.hero-photo{margin-top:0;flex-shrink:0;width:38%;}
+.hero-photo img{width:100%;}
+.hero-ctas{flex-direction:row;align-items:center;}
+.section{padding:100px 60px;}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;}
+.shop-grid{display:grid;grid-template-columns:repeat(3,1fr);}
+.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);}
+.c-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;}
+footer{flex-direction:row;justify-content:space-between;padding:36px 60px;}
+.wa-float{right:36px;bottom:36px;}
+}
+</style>
+</head>
+<body>
+<div class="wa-float">
+<div class="wa-lbl">Chatea con nosotros</div>
+<a href="https://wa.me/17864771991" class="wa-btn" target="_blank" aria-label="WhatsApp">
+<svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+</div>
+<nav>
+<div class="logo-nav">
+<img src="data:image/png;base64,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" alt="Aprendizaje Constructivo">
+<div class="logo-text">aprendizaje <span>constructivo</span><small>con Antonella Roas</small></div>
+</div>
+<ul class="nav-links">
+<li><a href="#servicios">Servicios</a></li>
+<li><a href="#sobre-mi">Sobre mí</a></li>
+<li><a href="#tienda">Tienda</a></li>
+<li><a href="#blog">Blog</a></li>
+<li><a href="#contacto">Contacto</a></li>
+</ul>
+<div class="nav-right">
+<a href="/index.html" class="lang-btn">EN</a>
+<a href="#contacto" class="nav-cta">Reservar Cita</a>
+</div>
+</nav>
+<section class="hero">
+<div class="shape s1"></div><div class="shape s2"></div><div class="shape s3"></div>
+<div class="hero-inner reveal">
+<div class="hero-badge"><div class="pulse"></div><span class="badge-text">Especialista en Desarrollo Infantil - Coral Gables, FL</span></div>
+<h1>Cada niño aprende<br>a su <em>propio</em><br><span class="hl">ritmo único</span></h1>
+<p class="hero-desc">Psicóloga infantil especializada en estimulación temprana, integración sensorial y metodología Montessori. Acompañando a niños de 3 meses a 9 años a alcanzar su máximo potencial.</p>
+<div class="hero-ctas">
+<a href="#contacto" class="btn-primary">Agendar Consulta</a>
+<a href="#servicios" class="btn-sec">Nuestros Servicios &rarr;</a>
+</div>
+<div class="hero-stats">
+<div class="stat"><div class="stat-num">3m-9</div><div class="stat-lbl">Edades atendidas</div></div>
+<div class="stat"><div class="stat-num">100%</div><div class="stat-lbl">Montessori</div></div>
+<div class="stat"><div class="stat-num">Coral</div><div class="stat-lbl">Gables, FL</div></div>
+</div>
+</div>
+<div class="hero-photo reveal">
+<img src="https://raw.githubusercontent.com/onyxarchitectural/antonella-website/main/IMG_6248.jpeg" alt="Antonella Roas - Psicóloga Infantil">
+</div>
+</section>
+<div class="cert-strip">
+<div class="cert-inner">
+<div class="cert-item"><div class="cert-icon">M</div><div class="cert-text">Certificada Montessori</div></div>
+<div class="cert-div"></div>
+<div class="cert-item"><div class="cert-icon">Ps</div><div class="cert-text">Psicóloga Licenciada</div></div>
+<div class="cert-div"></div>
+<div class="cert-item"><div class="cert-icon">ET</div><div class="cert-text">Estimulación Temprana</div></div>
+<div class="cert-div"></div>
+<div class="cert-item"><div class="cert-icon">SI</div><div class="cert-text">Integración Sensorial</div></div>
+</div>
+</div>
+<section class="section" id="servicios">
+<div class="reveal">
+<div class="eyebrow">Nuestros Servicios</div>
+<div class="sec-title">Apoyo especializado<br>para cada <em>etapa</em></div>
+<p class="sec-desc">Cada niño es único. Diseño planes terapéuticos personalizados basados en el perfil individual, edad y necesidades específicas de cada niño.</p>
+</div>
+<div class="svc-grid">
+<div class="svc-card c1 reveal"><span class="svc-emoji">&#128118;</span><div class="svc-name">Estimulación Temprana</div><p class="svc-text">Desarrollo de habilidades sensoriales, motoras y cognitivas en los primeros años de vida. La base de todo aprendizaje futuro.</p><div class="tags"><span class="tag r">3 meses - 3 años</span><span class="tag l">Sensorial</span></div></div>
+<div class="svc-card c2 reveal"><span class="svc-emoji">&#129504;</span><div class="svc-name">Dificultades de Aprendizaje</div><p class="svc-text">Evaluación y tratamiento de dislexia, TDAH, discalculia y otros desafíos de aprendizaje usando estrategias basadas en evidencia.</p><div class="tags"><span class="tag r">4 - 9 años</span><span class="tag t">Psicopedagogía</span></div></div>
+<div class="svc-card c3 reveal"><span class="svc-emoji">&#127807;</span><div class="svc-name">Integración Sensorial</div><p class="svc-text">Enfoque especializado para niños con hipersensibilidad, hiposensibilidad o dificultades de procesamiento sensorial.</p><div class="tags"><span class="tag r">Todas las edades</span><span class="tag l">Montessori</span></div></div>
+</div>
+</section>
+<section class="section alt" id="sobre-mi">
+<div class="about-grid">
+<div class="about-img reveal">
+<img src="https://raw.githubusercontent.com/onyxarchitectural/antonella-website/main/IMG_6213.jpeg" alt="Antonella Roas">
+<div class="about-badge"><div class="ab-name">L. Antonella Roas</div><div class="ab-sub">Psicóloga - Especialista Montessori</div></div>
+</div>
+<div class="reveal">
+<div class="eyebrow">Sobre Mí</div>
+<div class="sec-title">Apasionada por el<br><em>desarrollo infantil</em></div>
+<p style="font-size:15px;line-height:1.9;color:var(--text-light);margin-bottom:20px;font-weight:300;">Soy psicóloga especializada en dificultades de aprendizaje con posgrado en estimulación temprana. Trabajo con niños de 3 meses a 9 años, combinando la metodología Montessori con marcos de desarrollo infantil basados en evidencia.</p>
+<p style="font-size:15px;line-height:1.9;color:var(--text-light);margin-bottom:28px;font-weight:300;">Mi enfoque es siempre progresivo, respetando el ritmo único de cada niño y empoderando a las familias como aliados fundamentales en el proceso terapéutico.</p>
+<div class="creds">
+<div class="cred"><div class="cred-ic r">&#127891;</div><div><div class="cred-title">Psicóloga Clínica</div><div class="cred-sub">Especialización en Dificultades de Aprendizaje</div></div></div>
+<div class="cred"><div class="cred-ic l">&#127807;</div><div><div class="cred-title">Posgrado en Estimulación Temprana</div><div class="cred-sub">Certificada en Metodología Montessori</div></div></div>
+<div class="cred"><div class="cred-ic t">&#128300;</div><div><div class="cred-title">Integración Sensorial</div><div class="cred-sub">Enfoque científico basado en evidencia</div></div></div>
+</div>
+</div>
+</div>
+</section>
+<section class="section" id="tienda">
+<div class="reveal">
+<div class="eyebrow">Tienda</div>
+<div class="sec-title">Juguetes & kits<br><em>didácticos</em> curados</div>
+<p class="sec-desc">Cada producto es seleccionado y curado personalmente por Antonella basándose en principios terapéuticos y Montessori.</p>
+</div>
+<div class="shop-grid">
+<div class="prod reveal" style="border:2px solid var(--rosa);">
+<div class="prod-img r" style="height:200px;padding:0;overflow:hidden;">
+<img src="https://raw.githubusercontent.com/onyxarchitectural/antonella-website/main/211a711c-edbc-4484-98d3-59fd4e453a5f.jpeg" alt="Caja Aprendizaje Constructivo" style="width:100%;height:100%;object-fit:cover;">
+</div>
+<div class="prod-info">
+<div class="prod-age">✦ Personalizada para tu hijo</div>
+<div class="prod-name">Caja Aprendizaje Constructivo</div>
+<p class="prod-desc">Un kit completamente personalizado — actividades, materiales y juguetes curados por Antonella según las necesidades específicas y etapa de desarrollo de tu hijo.</p>
+<div class="prod-foot"><div class="prod-price">$50.00</div><a href="https://wa.me/17864771991?text=Hola!%20Me%20gustaría%20ordenar%20la%20Caja%20Aprendizaje%20Constructivo" target="_blank" style="background:var(--rosa);color:white;padding:9px 18px;border-radius:50px;font-size:12px;font-weight:600;text-decoration:none;font-family:'Poppins',sans-serif;">Ordenar Ahora</a></div>
+</div>
+</div>
+<div class="prod reveal"><div class="prod-img l">&#127919;</div><div class="prod-info"><div class="prod-age">2 - 4 años</div><div class="prod-name">Torre Montessori</div><p class="prod-desc">Juguete de clasificación y apilamiento que desarrolla la motricidad fina y el pensamiento lógico. Recomendado por Antonella.</p><div class="prod-foot"><div class="prod-price">$44.99</div><a href="#" target="_blank" style="background:var(--navy);color:white;padding:9px 18px;border-radius:50px;font-size:12px;font-weight:600;text-decoration:none;font-family:'Poppins',sans-serif;">Amazon →</a></div></div></div>
+<div class="prod reveal"><div class="prod-img t">&#128218;</div><div class="prod-info"><div class="prod-age">4 - 7 años</div><div class="prod-name">Kit Pre-Lectura</div><p class="prod-desc">Materiales fonológicos y visuales para preparar a los niños para el proceso de lectura y escritura. Alineado con Montessori.</p><div class="prod-foot"><div class="prod-price">$52.99</div><a href="#" target="_blank" style="background:var(--navy);color:white;padding:9px 18px;border-radius:50px;font-size:12px;font-weight:600;text-decoration:none;font-family:'Poppins',sans-serif;">Amazon →</a></div></div></div>
+</div>
+</section>
+<section class="section alt" id="blog">
+<div class="reveal">
+<div class="eyebrow">Blog</div>
+<div class="sec-title">Recursos para<br><em>familias</em> y educadores</div>
+<p class="sec-desc">Artículos semanales sobre estimulación temprana, Montessori y desarrollo infantil basados en evidencia científica.</p>
+</div>
+<div class="blog-grid">
+<div class="blog reveal"><div class="blog-img r"><span>&#129504;</span><span class="blog-cat r">Estimulación</span></div><div class="blog-body"><div class="blog-title">5 actividades sensoriales para bebés de 6 a 12 meses</div><p class="blog-excerpt">Aprende a estimular los sentidos de tu bebé con materiales simples que tienes en casa, siguiendo los principios Montessori.</p></div><div class="blog-foot"><span class="blog-date">Abril 2025</span><a href="#" class="blog-link">Leer más &rarr;</a></div></div>
+<div class="blog reveal"><div class="blog-img l"><span>&#128214;</span><span class="blog-cat l">Aprendizaje</span></div><div class="blog-body"><div class="blog-title">Cómo saber si tu hijo tiene dislexia: Señales tempranas</div><p class="blog-excerpt">Identificar las señales a tiempo puede marcar una gran diferencia. Aquí lo que debes observar y cuándo consultar a un especialista.</p></div><div class="blog-foot"><span class="blog-date">Marzo 2025</span><a href="#" class="blog-link">Leer más &rarr;</a></div></div>
+<div class="blog reveal"><div class="blog-img t"><span>&#127807;</span><span class="blog-cat t">Montessori</span></div><div class="blog-body"><div class="blog-title">Ambiente preparado: cómo organizar el cuarto de tu hijo</div><p class="blog-excerpt">El ambiente físico es el tercer maestro en Montessori. Aprende a crear espacios que inviten al aprendizaje autónomo.</p></div><div class="blog-foot"><span class="blog-date">Febrero 2025</span><a href="#" class="blog-link">Leer más &rarr;</a></div></div>
+</div>
+</section>
+<section class="contact-section" id="contacto">
+<div class="c-grid">
+<div class="reveal">
+<div class="eyebrow">Contacto</div>
+<div class="sec-title">Tu hijo merece<br>el <em>mejor apoyo</em></div>
+<p class="sec-desc">Respondo en menos de 2 horas. Consulta de evaluación gratuita disponible esta semana.</p>
+<div style="margin-top:28px;">
+<div class="c-item"><div class="c-icon">&#128241;</div><div><div class="c-lbl">WhatsApp</div><div class="c-val">(786) 477-1991</div></div></div>
+<div class="c-item"><div class="c-icon">&#9993;</div><div><div class="c-lbl">Email</div><div class="c-val"><a href="mailto:antonella@antonellaroas.com">antonella@antonellaroas.com</a></div></div></div>
+<div class="c-item"><div class="c-icon">&#128205;</div><div><div class="c-lbl">Consultorio</div><div class="c-val">3081 Salzedo St, Coral Gables, FL 33134</div></div></div>
+<div class="c-item"><div class="c-icon">&#128336;</div><div><div class="c-lbl">Horario</div><div class="c-val">Lun-Vie 9am-6pm - Sáb 9am-1pm</div></div></div>
+</div>
+</div>
+<div class="reveal">
+<form class="cform" id="cForm">
+<div class="f2">
+<div class="fg"><label class="flbl">Nombre del Padre/Madre</label><input type="text" name="parent" class="finp" required placeholder="María García"></div>
+<div class="fg"><label class="flbl">Nombre del Niño</label><input type="text" name="child" class="finp" required placeholder="Sofía"></div>
+</div>
+<div class="f2">
+<div class="fg"><label class="flbl">Email</label><input type="email" name="email" class="finp" required placeholder="maria@email.com"></div>
+<div class="fg"><label class="flbl">Teléfono</label><input type="tel" name="phone" class="finp" placeholder="(786) 000-0000"></div>
+</div>
+<div class="fg"><label class="flbl">Edad del Niño</label><select name="age" class="finp" required><option value="" disabled selected>Seleccionar edad</option><option>3 - 11 meses</option><option>1 - 2 años</option><option>2 - 3 años</option><option>3 - 5 años</option><option>5 - 7 años</option><option>7 - 9 años</option></select></div>
+<div class="fg"><label class="flbl">Motivo de Consulta</label><select name="reason" class="finp"><option value="" disabled selected>Seleccionar motivo</option><option>Estimulación temprana</option><option>Dificultades de aprendizaje</option><option>Integración sensorial</option><option>Evaluación general</option><option>Otro</option></select></div>
+<div class="fg"><label class="flbl">Cuéntame sobre tu hijo</label><textarea name="msg" class="finp" placeholder="Describe brevemente los desafíos o áreas en las que deseas trabajar..."></textarea></div>
+<button type="submit" class="btn-sub">Solicitar Consulta Gratuita</button>
+</form>
+<div class="ty" id="tyMsg"><h3>¡Gracias!</h3><p>Recibí tu mensaje y me pondré en contacto contigo en menos de 2 horas para programar tu primera consulta de evaluación.</p></div>
+</div>
+</div>
+</section>
+<footer>
+<div class="ft-logo">Aprendizaje Constructivo</div>
+<div class="ft-sub">con Antonella Roas - Psicóloga Infantil - Coral Gables, FL</div>
+<div class="ft-copy">2025 Antonella Roas. Todos los derechos reservados.</div>
+</footer>
+<script>
+var obs = new IntersectionObserver(function(entries) {
+  entries.forEach(function(e, i) {
+    if (e.isIntersecting) { setTimeout(function() { e.target.classList.add("visible"); }, i * 100); }
+  });
+}, {threshold: 0.1});
+document.querySelectorAll(".reveal").forEach(function(el) { obs.observe(el); });
+document.getElementById("cForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+  var f = e.target;
+  document.getElementById("cForm").style.display = "none";
+  document.getElementById("tyMsg").classList.add("on");
+  var wa = "Nueva Consulta - Antonella Roas%0APadre/Madre: " + f.parent.value + "%0ANiño: " + f.child.value + " (" + f.age.value + ")%0AEmail: " + f.email.value + "%0ATeléfono: " + f.phone.value + "%0AMotivo: " + f.reason.value + "%0A" + f.msg.value;
+  setTimeout(function() { window.open("https://wa.me/17864771991?text=" + wa, "_blank"); }, 1200);
+});
+</script>
+</body>
+</html>
