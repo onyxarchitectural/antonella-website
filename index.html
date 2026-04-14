@@ -347,6 +347,21 @@ document.querySelectorAll(".reveal").forEach(function(el) { obs.observe(el); });
 document.getElementById("cForm").addEventListener("submit", function(e) {
   e.preventDefault();
   var f = e.target;
+  var data = {
+    parent: f.parent.value,
+    child: f.child.value,
+    email: f.email.value,
+    phone: f.phone.value,
+    age: f.age.value,
+    reason: f.reason.value,
+    msg: f.msg.value,
+    lang: f.lang.value
+  };
+  fetch("https://onyxarch.app.n8n.cloud/webhook/luna-intake", {
+    method: "POST",
+    headers: {"Content-Type": "application/json"},
+    body: JSON.stringify(data)
+  });
   document.getElementById("cForm").style.display = "none";
   document.getElementById("tyMsg").classList.add("on");
   var wa = "New Consultation - Antonella Roas%0AParent: " + f.parent.value + "%0AChild: " + f.child.value + " (" + f.age.value + ")%0AEmail: " + f.email.value + "%0APhone: " + f.phone.value + "%0AReason: " + f.reason.value + "%0A" + f.msg.value;
