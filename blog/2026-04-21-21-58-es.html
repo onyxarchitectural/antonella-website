@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cómo Manejar las Rabietas en Niños de 2 a 5 Años: Guía para Padres en Miami</title>
+    <meta name="description" content="Descubre estrategias efectivas para manejar las rabietas infantiles. Consejos de psicóloga experta en Coral Gables para padres de Miami.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #1E2D5A;
+            background-color: #FDFAF7;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background-color: #FDFAF7;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        
+        .logo-text {
+            font-size: 18px;
+            font-weight: 600;
+            color: #1E2D5A;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #1E2D5A;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: #E8798A;
+        }
+        
+        .cta-button {
+            background-color: #E8798A;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+        
+        .cta-button:hover {
+            background-color: #d96b7e;
+        }
+        
+        main {
+            margin-top: 100px;
+            padding: 40px 0;
+        }
+        
+        .article-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .reading-time {
+            color: #4BB8D4;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1E2D5A;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .article-intro {
+            font-size: 1.2rem;
+            color: #666;
+            max-width: 800px;
+            margin: 0 auto 40px;
+        }
+        
+        .article-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #1E2D5A;
+            margin: 40px 0 20px;
+            border-left: 4px solid #E8798A;
+            padding-left: 20px;
+        }
+        
+        p {
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+        
+        .highlight-box {
+            background-color: #f8f9fa;
+            border-left: 4px solid #4BB8D4;
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 0 10px 10px 0;
+        }
+        
+        .tips-list {
+            background-color: #f8f9fa;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+        }
+        
+        .tips-list h3 {
+            color: #1E2D5A;
+            margin-bottom: 20px;
+            font-size: 1.4rem;
+        }
+        
+        .tips-list ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .tips-list li {
+            margin-bottom: 15px;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .tips-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #C8D43A;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        
+        .call-to-action {
+            background: linear-gradient(135deg, #E8798A, #4BB8D4);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin: 50px 0;
+        }
+        
+        .call-to-action h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+        
+        .call-to-action p {
+            margin-bottom: 25px;
+            font-size: 1.1rem;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn-primary {
+            background-color: white;
+            color: #1E2D5A;
+            padding: 15px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.3s;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+        }
+        
+        .btn-whatsapp {
+            background-color: #25D366;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.3s;
+        }
+        
+        .btn-whatsapp:hover {
+            transform: translateY(-2px);
+        }
+        
+        .keywords {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 30px 0;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        footer {
+            background-color: #1E2D5A;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 60px;
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <img src="https://raw.githubusercontent.com/onyxarchitectural/antonella-website/main/IMG_5385.jpeg" alt="Antonella Roas">
+                <span class="logo-text">Aprendizaje Constructivo</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#tienda">Tienda</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <a href="#reservar" class="cta-button">Reservar Cita</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <article>
+            <div class="article-header">
+                <div class="reading-time">⏱️ Tiempo de lectura: 8 minutos</div>
+                <h1>Cómo Manejar las Rabietas en Niños de 2 a 5 Años: Guía Completa para Padres en Miami</h1>
+                <p class="article-intro">Las rabietas son una parte normal del desarrollo infantil, pero pueden resultar abrumadoras para los padres. Como psicóloga infantil en Coral Gables, he ayudado a cientos de familias a navegar estos momentos desafiantes con estrategias basadas en evidencia científica.</p>
+            </div>
+
+            <div class="article-content">
+                <h2>¿Por Qué Ocurren las Rabietas en los Niños Pequeños?</h2>
+                <p>Las rabietas no son simplemente "mal comportamiento". Según la American Academy of Pediatrics, las rabietas son una respuesta normal al desarrollo cerebral de los niños entre 2 y 5 años. Durante esta etapa, el córtex prefrontal, responsable del control emocional y la toma de decisiones, aún está en desarrollo.</p>
+                
+                <div class="highlight-box">
+                    <p><strong>Dato importante:</strong> El 90% de los niños entre 2 y 4 años experimentan rabietas regularmente. Esto indica que es una fase completamente normal del desarrollo infantil.</p>
+                </div>
+
+                <p>Las principales causas de las rabietas incluyen:</p>
+                <ul>
+                    <li>Frustración por no poder comunicar sus necesidades</li>
+                    <li>Cansancio o hambre</li>
+                    <li>Cambios en la rutina</li>
+                    <li>Búsqueda de independencia</li>
+                    <li>Sobreestimulación sensorial</li>
+                </ul>
+
+                <h2>La Neurociencia Detrás de las Rabietas</h2>
+                <p>Investigaciones recientes en neurociencia infantil revelan que durante una rabieta, el cerebro del niño está experimentando una "tormenta emocional". La amígdala (centro emocional) se activa intensamente, mientras que el córtex prefrontal (centro racional) se desactiva temporalmente.</p>
+
+                <p>Este fenómeno, conocido como "secuestro emocional", explica por qué durante una rabieta los niños no pueden procesar la lógica o seguir instrucciones complejas. Es crucial entender que en estos momentos, el niño no está siendo desafiante intencionalmente.</p>
+
+                <h2>Estrategias Efectivas Durante la Rabieta</h2>
+                <p>Cuando tu hijo está experimentando una rabieta, tu respuesta puede marcar la diferencia en la intensidad y duración del episodio. Aquí están las estrategias más efectivas basadas en evidencia:</p>
+
+                <p><strong>1. Mantén la calma:</strong> Tu estado emocional influye directamente en el de tu hijo. Respira profundamente y recuerda que esta fase pasará.</p>
+
+                <p><strong>2. Valida sus emociones:</strong> Frases como "Veo que estás muy frustrado" ayudan al niño a sentirse comprendido sin reforzar el comportamiento inadecuado.</p>
+
+                <p><strong>3. Usa el contacto físico reconfortante:</strong> Si tu hijo lo permite, un abrazo suave puede ayudar a regular su sistema nervioso.</p>
+
+                <p><strong>4. Mantén límites firmes pero empáticos:</strong> Puedes validar emociones sin ceder a demandas irracionales.</p>
+
+                <div class="highlight-box">
+                    <p><strong>Técnica del Dr. Dan Siegel:</strong> "Conectar antes de corregir". Primero establece conexión emocional con tu hijo, luego aborda el comportamiento.</p>
+                </div>
+
+                <h2>Prevención: La Clave del Éxito</h2>
+                <p>La prevención es más efectiva que la intervención durante una rabieta. Estudios muestran que las familias que implementan estrategias preventivas reducen la frecuencia de rabietas en un 60%.</p>
+
+                <p><strong>Rutinas predecibles:</strong> Los niños se sienten más seguros cuando conocen qué esperar. Establece rutinas claras para comidas, siestas y actividades.</p>
+
+                <p><strong>Anticipación de transiciones:</strong> Avisa con 10-15 minutos de anticipación antes de cambiar de actividad. "En 10 minutos vamos a guardar los juguetes para cenar".</p>
+
+                <p><strong>Enseña habilidades de autorregulación:</strong> Técnicas como respiración profunda, contar hasta 10, o usar un "rincón de calma" son herramientas valiosas.</p>
+
+                <h2>Cuándo Buscar Ayuda Profesional</h2>
+                <p>Mientras que las rabietas ocasionales son normales, ciertos signos indican que podría ser beneficioso buscar apoyo profesional:</p>
+
+                <ul>
+                    <li>Rabietas que duran más de 30 minutos regularmente</li>
+                    <li>Comportamiento agresivo hacia sí mismo o otros</li>
+                    <li>Rabietas que interfieren significativamente con la vida diaria</li>
+                    <li>Regresión en habilidades ya adquiridas</li>
+                    <li>Rabietas que continúan más allá de los 5 años</li>
+                </ul>
+
+                <p>Como psicóloga infantil en Coral Gables, trabajo con familias para desarrollar estrategias personalizadas que se adapten a las necesidades específicas de cada niño y familia.</p>
+
+                <div class="tips-list">
+                    <h3>Tips Accionables para Implementar Hoy</h3>
+                    <ul>
+                        <li>Crea un "kit de calma" con objetos reconfortantes para tu hijo</li>
