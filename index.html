@@ -297,29 +297,21 @@ footer{flex-direction:row;justify-content:space-between;padding:36px 60px;}
   <div class="blog reveal"><div class="blog-img r"><span>&#129504;</span><span class="blog-cat r">Loading</span></div><div class="blog-body"><div class="blog-title">Loading articles...</div></div></div>
 </div>
 <script>
-fetch('https://api.github.com/repos/onyxarchitectural/antonella-website/contents/blog')
+fetch('https://raw.githubusercontent.com/onyxarchitectural/antonella-website/main/blog-index.json')
   .then(r => r.json())
-  .then(files => {
-    const enFiles = files
-      .filter(f => f.name.endsWith('-en.html'))
-      .sort((a,b) => b.name.localeCompare(a.name))
-      .slice(0,3);
+  .then(articles => {
     const colors = ['r','l','t'];
     const icons = ['&#129504;','&#128214;','&#127807;'];
     const cats = ['Stimulation','Learning','Montessori'];
-    const catColors = ['r','l','t'];
     const grid = document.getElementById('blogGrid');
-    if(enFiles.length === 0){ grid.innerHTML='<p>No articles yet.</p>'; return; }
-    grid.innerHTML = enFiles.map((f,i) => {
-      const parts = f.name.replace('-en.html','').split('-');
-      const date = parts.slice(0,3).join('-');
-      const titleRaw = parts.slice(3).join(' ');
-      const title = titleRaw.length > 3 ? titleRaw.charAt(0).toUpperCase() + titleRaw.slice(1) : 'New Article';
-      const c = colors[i % colors.length];
+    if(!articles || articles.length === 0){ grid.innerHTML='<p>Articles coming soon.</p>'; return; }
+    const recent = articles.slice(0,3);
+    grid.innerHTML = recent.map((a,i) => {
+      const c = colors[i % 3];
       return `<div class="blog reveal">
-        <div class="blog-img ${c}"><span>${icons[i%3]}</span><span class="blog-cat ${catColors[i%3]}">${cats[i%3]}</span></div>
-        <div class="blog-body"><div class="blog-title">${title}</div><p class="blog-excerpt">Click to read the full article.</p></div>
-        <div class="blog-foot"><span class="blog-date">${date}</span><a href="${f.download_url}" class="blog-link" target="_blank">Read more &rarr;</a></div>
+        <div class="blog-img ${c}"><span>${icons[i%3]}</span><span class="blog-cat ${c}">${cats[i%3]}</span></div>
+        <div class="blog-body"><div class="blog-title">${a.title_en}</div><p class="blog-excerpt">Click to read the full article.</p></div>
+        <div class="blog-foot"><span class="blog-date">${a.date}</span><a href="${a.url_en}" class="blog-link" target="_blank">Read more &rarr;</a></div>
       </div>`;
     }).join('');
   })
