@@ -289,15 +289,42 @@ footer{flex-direction:row;justify-content:space-between;padding:36px 60px;}
 </section>
 <section class="section alt" id="blog">
 <div class="reveal">
-<div class="eyebrow">Blog</div>
-<div class="sec-title">Resources for<br><em>families</em> and educators</div>
-<p class="sec-desc">Weekly articles on early stimulation, Montessori, and child development based on scientific evidence.</p>
+  <div class="eyebrow">Blog</div>
+  <div class="sec-title">Resources for<br><em>families</em> and educators</div>
+  <p class="sec-desc">Weekly articles on early stimulation, Montessori, and child development based on scientific evidence.</p>
 </div>
-<div class="blog-grid">
-<div class="blog reveal"><div class="blog-img r"><span>&#129504;</span><span class="blog-cat r">Stimulation</span></div><div class="blog-body"><div class="blog-title">5 sensory activities for babies 6 to 12 months</div><p class="blog-excerpt">Learn how to stimulate your baby's senses with simple materials you have at home, following Montessori principles.</p></div><div class="blog-foot"><span class="blog-date">April 2025</span><a href="#" class="blog-link">Read more &rarr;</a></div></div>
-<div class="blog reveal"><div class="blog-img l"><span>&#128214;</span><span class="blog-cat l">Learning</span></div><div class="blog-body"><div class="blog-title">How to tell if your child has dyslexia: Early signs</div><p class="blog-excerpt">Identifying the signs early can make a huge difference. Here is what to watch for and when to consult a specialist.</p></div><div class="blog-foot"><span class="blog-date">March 2025</span><a href="#" class="blog-link">Read more &rarr;</a></div></div>
-<div class="blog reveal"><div class="blog-img t"><span>&#127807;</span><span class="blog-cat t">Montessori</span></div><div class="blog-body"><div class="blog-title">Prepared environment: how to organize your child's room</div><p class="blog-excerpt">The physical environment is the third teacher in Montessori. Learn to create spaces that invite autonomous learning.</p></div><div class="blog-foot"><span class="blog-date">February 2025</span><a href="#" class="blog-link">Read more &rarr;</a></div></div>
+<div class="blog-grid" id="blogGrid">
+  <div class="blog reveal"><div class="blog-img r"><span>&#129504;</span><span class="blog-cat r">Loading</span></div><div class="blog-body"><div class="blog-title">Loading articles...</div></div></div>
 </div>
+<script>
+fetch('https://api.github.com/repos/onyxarchitectural/antonella-website/contents/blog')
+  .then(r => r.json())
+  .then(files => {
+    const enFiles = files
+      .filter(f => f.name.endsWith('-en.html'))
+      .sort((a,b) => b.name.localeCompare(a.name))
+      .slice(0,3);
+    const colors = ['r','l','t'];
+    const icons = ['&#129504;','&#128214;','&#127807;'];
+    const cats = ['Stimulation','Learning','Montessori'];
+    const catColors = ['r','l','t'];
+    const grid = document.getElementById('blogGrid');
+    if(enFiles.length === 0){ grid.innerHTML='<p>No articles yet.</p>'; return; }
+    grid.innerHTML = enFiles.map((f,i) => {
+      const parts = f.name.replace('-en.html','').split('-');
+      const date = parts.slice(0,3).join('-');
+      const titleRaw = parts.slice(3).join(' ');
+      const title = titleRaw.length > 3 ? titleRaw.charAt(0).toUpperCase() + titleRaw.slice(1) : 'New Article';
+      const c = colors[i % colors.length];
+      return `<div class="blog reveal">
+        <div class="blog-img ${c}"><span>${icons[i%3]}</span><span class="blog-cat ${catColors[i%3]}">${cats[i%3]}</span></div>
+        <div class="blog-body"><div class="blog-title">${title}</div><p class="blog-excerpt">Click to read the full article.</p></div>
+        <div class="blog-foot"><span class="blog-date">${date}</span><a href="${f.download_url}" class="blog-link" target="_blank">Read more &rarr;</a></div>
+      </div>`;
+    }).join('');
+  })
+  .catch(()=>{ document.getElementById('blogGrid').innerHTML='<p>Articles coming soon.</p>'; });
+</script>
 </section>
 <section class="contact-section" id="contact">
 <div class="c-grid">
