@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cómo Ayudar a Tu Hijo con Ansiedad Escolar en Miami: Guía para Padres</title>
+    <meta name="description" content="Descubre estrategias efectivas para ayudar a tu hijo con ansiedad escolar. Consejos de psicóloga infantil en Coral Gables, Miami.">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #1E2D5A;
+            background-color: #FDFAF7;
+        }
+        
+        header {
+            background-color: #FDFAF7;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .logo img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        
+        .logo-text {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #1E2D5A;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #1E2D5A;
+            font-weight: 400;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: #E8798A;
+        }
+        
+        .cta-button {
+            background-color: #E8798A;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.3s;
+        }
+        
+        .cta-button:hover {
+            background-color: #d66578;
+        }
+        
+        main {
+            max-width: 800px;
+            margin: 120px auto 2rem;
+            padding: 0 2rem;
+        }
+        
+        .article-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1E2D5A;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        
+        .meta-info {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+        }
+        
+        .intro {
+            background: linear-gradient(135deg, #4BB8D4, #C8D43A);
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #1E2D5A;
+            margin: 2.5rem 0 1rem;
+            border-left: 4px solid #E8798A;
+            padding-left: 1rem;
+        }
+        
+        p {
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+        
+        .tips-list {
+            background-color: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+        
+        .tips-list h3 {
+            color: #1E2D5A;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        
+        .tips-list ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .tips-list li {
+            padding: 0.8rem 0;
+            border-bottom: 1px solid #e9ecef;
+            position: relative;
+            padding-left: 2rem;
+        }
+        
+        .tips-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #C8D43A;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+        .highlight {
+            background-color: #C8D43A;
+            padding: 0.2rem 0.5rem;
+            border-radius: 5px;
+            color: #1E2D5A;
+            font-weight: 500;
+        }
+        
+        .call-to-action {
+            background: linear-gradient(135deg, #E8798A, #4BB8D4);
+            color: white;
+            padding: 3rem;
+            border-radius: 15px;
+            text-align: center;
+            margin: 3rem 0;
+        }
+        
+        .call-to-action h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        
+        .call-to-action p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 1rem 2rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+        
+        .btn-primary {
+            background-color: #FDFAF7;
+            color: #1E2D5A;
+        }
+        
+        .btn-secondary {
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .keywords {
+            background-color: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: white;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+        
+        footer {
+            background-color: #1E2D5A;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            main {
+                padding: 0 1rem;
+                margin-top: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://raw.githubusercontent.com/onyxarchitectural/antonella-website/main/IMG_5385.jpeg" alt="Antonella Roas Logo">
+                <span class="logo-text">Antonella Roas</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#tienda">Tienda</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#" class="cta-button">Reservar Cita</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <div class="article-header">
+                <h1>Cómo Ayudar a Tu Hijo con Ansiedad Escolar en Miami: Guía Completa para Padres</h1>
+                <div class="meta-info">
+                    Por Antonella Roas, Psicóloga Infantil | Tiempo de lectura: 8 minutos | Coral Gables, FL
+                </div>
+            </div>
+
+            <div class="intro">
+                <p>¿Tu hijo se queja de dolor de estómago cada mañana antes de ir al colegio? ¿Ha comenzado a resistirse a las actividades escolares o muestra signos de angustia al hablar de la escuela? La ansiedad escolar es más común de lo que muchos padres en Miami y Coral Gables imaginan, y como psicóloga infantil especializada, he trabajado con numerosas familias que enfrentan este desafío.</p>
+                
+                <p>La ansiedad escolar no es simplemente "nervios" normales; es una respuesta emocional intensa que puede afectar significativamente el bienestar y rendimiento académico de tu hijo. En este artículo, te guiaré a través de estrategias respaldadas por la ciencia para identificar, comprender y abordar la ansiedad escolar de manera efectiva.</p>
+            </div>
+
+            <h2>¿Qué es la Ansiedad Escolar y Cómo Identificarla?</h2>
+            <p>La ansiedad escolar es una forma específica de ansiedad que se manifiesta en relación con el entorno educativo. Según el <span class="highlight">Manual Diagnóstico DSM-5</span>, puede presentarse como parte de un trastorno de ansiedad por separación, fobia específica o ansiedad generalizada.</p>
+
+            <p>Los síntomas más comunes incluyen:</p>
+            <ul>
+                <li><strong>Síntomas físicos:</strong> dolores de cabeza, náuseas, dolor abdominal, fatiga</li>
+                <li><strong>Síntomas emocionales:</strong> llanto frecuente, irritabilidad, miedo intenso</li>
+                <li><strong>Síntomas conductuales:</strong> resistencia a ir a la escuela, evitación de actividades escolares</li>
+                <li><strong>Síntomas cognitivos:</strong> pensamientos catastróficos sobre la escuela, dificultad de concentración</li>
+            </ul>
+
+            <p>Es importante distinguir entre la ansiedad escolar y la simple reticencia ocasional. La ansiedad escolar persiste durante semanas o meses y interfiere significativamente con la vida diaria del niño y la familia.</p>
+
+            <h2>Causas Principales de la Ansiedad Escolar en Niños de Miami</h2>
+            <p>En mi práctica en Coral Gables, he observado que las causas de la ansiedad escolar pueden ser multifactoriales. Estudios recientes en neurociencia infantil demuestran que factores biológicos, psicológicos y ambientales interactúan de maneras complejas.</p>
+
+            <p><strong>Factores biológicos:</strong> La investigación muestra que algunos niños tienen una predisposición genética a la ansiedad. El sistema límbico, particularmente la amígdala, puede ser más reactivo en estos niños, activando respuestas de "lucha o huida" ante situaciones escolares percibidas como amenazantes.</p>
+
+            <p><strong>Factores académicos específicos de Miami:</strong> La presión académica en escuelas de alta competitividad en áreas como Coral Gables, Pinecrest y Aventura puede contribuir significativamente. El sistema educativo de Florida, con sus evaluaciones estatales (FAST), puede generar estrés adicional.</p>
+
+            <p><strong>Factores sociales y culturales:</strong> Miami es una ciudad multicultural donde muchas familias navegan entre diferentes idiomas y culturas. Esta transición cultural puede crear ansiedad adicional en el entorno escolar, especialmente para niños que se sienten diferentes o tienen dificultades con el idioma.</p>
+
+            <p><strong>Cambios y transiciones:</strong> Mudanzas frecuentes (comunes en Miami debido a su naturaleza transitoria), cambios de escuela, divorcio de los padres, o eventos traumáticos pueden desencadenar ansiedad escolar.</p>
+
+            <h2>Estrategias Basadas en Evidencia Científica para Ayudar a Tu Hijo</h2>
+            <p>La terapia cognitivo-conductual (TCC) ha demostrado ser la intervención más efectiva para la ansiedad infantil, con tasas de éxito del 70-80% según estudios longitudinales. Como parte del <span class="highlight">Aprendizaje Constructivo</span>, implemento estas estrategias adaptadas para cada familia:</p>
+
+            <p><strong>1. Técnicas de Respiración y Relajación:</strong> Enseña a tu hijo la respiración diafragmática. Estudios de neuroimagen muestran que la respiración profunda activa el sistema nervioso parasimpático, reduciendo la activación de la amígdala.</p>
+
+            <p><strong>2. Restructuración Cognitiva Adaptada para Niños:</strong> Ayuda a tu hijo a identificar y desafiar pensamientos ansiosos. Por ejemplo, transformar "Todos se van a burlar de mí" en "Algunos niños son amigables
