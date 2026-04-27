@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screen Time and Child Development: Expert Guide for Miami Parents | Antonella Roas</title>
+    <meta name="description" content="Expert child psychologist advice on managing screen time for healthy development. Evidence-based tips for Miami parents. Book consultation today.">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #1E2D5A;
+            background-color: #FDFAF7;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Navigation */
+        nav {
+            background: #FDFAF7;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .logo img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        
+        .logo-text {
+            font-weight: 600;
+            color: #1E2D5A;
+            font-size: 1.1rem;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            align-items: center;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #1E2D5A;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: #E8798A;
+        }
+        
+        .btn-appointment {
+            background: #E8798A;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 25px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+        
+        .btn-appointment:hover {
+            background: #d6687a;
+        }
+        
+        /* Main Content */
+        main {
+            padding: 60px 0;
+        }
+        
+        .article-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .reading-time {
+            color: #4BB8D4;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            color: #1E2D5A;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .article-intro {
+            font-size: 1.2rem;
+            color: #666;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+        
+        .article-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        h2 {
+            color: #1E2D5A;
+            font-size: 1.8rem;
+            margin: 40px 0 20px;
+            border-left: 4px solid #C8D43A;
+            padding-left: 20px;
+        }
+        
+        p {
+            margin-bottom: 20px;
+            line-height: 1.8;
+            color: #555;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, #4BB8D4, #C8D43A);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+        }
+        
+        .tips-list {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+        }
+        
+        .tips-list h3 {
+            color: #1E2D5A;
+            margin-bottom: 20px;
+            font-size: 1.4rem;
+        }
+        
+        .tips-list ul {
+            padding-left: 20px;
+        }
+        
+        .tips-list li {
+            margin-bottom: 15px;
+            color: #555;
+            line-height: 1.6;
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, #E8798A, #4BB8D4);
+            color: white;
+            padding: 50px;
+            border-radius: 20px;
+            text-align: center;
+            margin: 50px 0;
+        }
+        
+        .cta-section h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+        
+        .cta-section p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            color: white;
+        }
+        
+        .btn-cta {
+            background: white;
+            color: #E8798A;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            text-decoration: none;
+            display: inline-block;
+            transition: transform 0.3s;
+        }
+        
+        .btn-cta:hover {
+            transform: translateY(-3px);
+        }
+        
+        /* WhatsApp Button */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: white;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s;
+        }
+        
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+        
+        /* Footer */
+        footer {
+            background: #1E2D5A;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        .keywords {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 30px 0;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .article-intro {
+                font-size: 1.1rem;
+            }
+            
+            .cta-section {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="https://raw.githubusercontent.com/onyxarchitectural/antonella-website/main/IMG_5385.jpeg" alt="Antonella Roas">
+                    <div class="logo-text">Aprendizaje Constructivo</div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#appointment" class="btn-appointment">Book Appointment</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="article-header">
+                <div class="reading-time">📖 Reading time: 8 minutes</div>
+                <h1>Screen Time and Child Development: A Complete Guide for Miami Parents</h1>
+                <p class="article-intro">
+                    As a child psychologist serving families in Coral Gables and Miami, I witness daily concerns about screen time's impact on children's development. This evidence-based guide provides practical strategies to help your child build a healthy relationship with technology while supporting their cognitive, emotional, and social growth.
+                </p>
+            </div>
+
+            <div class="article-content">
+                <h2>Understanding Screen Time's Impact on Developing Minds</h2>
+                <p>
+                    Research from the American Academy of Pediatrics reveals that excessive screen time can significantly affect children's brain development, particularly in areas responsible for executive function, attention, and emotional regulation. The developing brain is highly plastic, making early childhood a critical period for establishing healthy digital habits.
+                </p>
+                <p>
+                    Studies published in JAMA Pediatrics show that children who exceed recommended screen time limits demonstrate increased difficulty with problem-solving, delayed language development, and challenges in social interaction. However, the key isn't complete avoidance—it's about finding the right balance and choosing quality content.
+                </p>
+
+                <div class="highlight-box">
+                    <h3>Miami Parent Alert: Local Statistics</h3>
+                    <p>Miami-Dade County children spend an average of 7.5 hours daily on screens—significantly above pediatric recommendations. This trend has accelerated post-pandemic, making professional guidance more crucial than ever for local families.</p>
+                </div>
+
+                <h2>Age-Appropriate Screen Time Guidelines</h2>
+                <p>
+                    The American Academy of Pediatrics provides clear guidelines that I recommend to all families in my Coral Gables practice:
+                </p>
+                <p>
+                    <strong>Ages 18-24 months:</strong> Avoid screens except video chatting. If introducing digital media, watch together and help children understand what they're seeing.
+                </p>
+                <p>
+                    <strong>Ages 2-5 years:</strong> Limit screen time to one hour per day of high-quality programming. Co-viewing is essential for learning and comprehension.
+                </p>
+                <p>
+                    <strong>Ages 6 and older:</strong> Establish consistent limits ensuring screen time doesn't interfere with sleep, physical activity, and face-to-face social interaction.
+                </p>
+
+                <h2>Quality Over Quantity: Choosing Educational Content</h2>
+                <p>
+                    Not all screen time is created equal. Educational programs with interactive elements, clear learning objectives, and age-appropriate pacing can support cognitive development when used appropriately. Look for content that encourages participation, teaches problem-solving, and connects to real-world experiences.
+                </p>
+                <p>
+                    Research from MIT's Center for Digital Business demonstrates that children learn best from screens when parents actively participate, ask questions, and extend learning beyond the device. This co-viewing approach transforms passive consumption into active learning opportunities.
+                </p>
+
+                <h2>Creating Screen-Free Zones and Family Media Plans</h2>
+                <p>
+                    Successful screen time management requires intentional planning. I work with Miami families to develop personalized media plans that consider each child's unique needs, developmental stage, and family dynamics.
+                </p>
+                <p>
+                    Establishing screen-free zones—particularly bedrooms and dining areas—promotes better sleep hygiene and family connection. Research shows that screens in bedrooms correlate with sleep difficulties, behavioral problems, and academic challenges.
+                </p>
+
+                <h2>Supporting Healthy Development Beyond Screens</h2>
+                <p>
+                    While managing screen time is important, equally crucial is ensuring children have rich, varied experiences that support holistic development. Physical play, creative activities, reading, and social interaction remain fundamental for healthy brain development.
+                </p>
+                <p>
+                    Miami's year-round outdoor weather provides excellent opportunities for nature-based activities that support attention, reduce stress, and promote physical health. Balancing digital and real-world experiences creates the optimal environment for child development.
+                </p>
+
+                <div class="tips-list">
+                    <h3>Actionable Tips for Miami Families</h3>
+                    <ul>
+                        <li><strong>Create a family media agreement:</strong> Involve children in setting rules and consequences for screen time</li>
+                        <li><strong>Use parental controls wisely:</strong> Set up time limits and content filters appropriate for your child's age</li>
+                        <li><strong>Model healthy habits:</strong> Children learn more from what they see than what they hear</li>
+                        <li><strong>Establish tech-free meal times:</strong> Promote family bonding and mindful eating</li>
+                        <li><strong>Create engaging alternatives:</strong> Offer appealing non-screen activities to reduce resistance</li>
+                        <li><strong>Use transition warnings:</strong> Give 10 and 5-minute warnings before screen time ends</li>
+                        <li><strong>Choose educational apps carefully:</strong> Look for programs that encourage creativity and problem-solving</li>
+                        <li><strong>Regular check-ins:</strong> Discuss what children watch and learn from their programs</li>
+                    </ul>
+                </div>
+
+                <p>
+                    Remember that every child is unique. What works for one family may need adjustment for another. If you're concerned about your child's relationship with technology or notice behavioral changes related to screen time, professional guidance can provide personalized strategies for your family's success.
+                </p>
+
+                <div class="cta-section">
+                    <h3>Need Professional Guidance for Your Child's Development?</h3>
+                    <p>As a licensed child psychologist in Coral Gables, I help Miami families navigate screen time challenges while supporting healthy child development. Schedule a consultation to create a personalized plan for your family.</p>
+                    <a href="https://wa.me/17864771991" class="btn-cta">Book Your Consultation Today</a>
+                </div>
+
+                <div class="keywords">
+                    <strong>Keywords:</strong> child psychologist Miami, screen time children, child development Coral Gables, pediatric psychology Miami, parenting tips Miami, child behavior specialist, digital wellness children, family therapy Miami, child counseling Coral Gables, developmental psychology
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Aprendizaje Constructivo con Antonella Roas - Child Psychologist - Coral Gables, FL</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/17864771991" class="whatsapp-float" target="_blank">
+        💬
+    </a>
+</body>
+</html
