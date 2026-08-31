@@ -1,5 +1,14 @@
 [
   {
+    "date": "2026-08-31",
+    "title_en": "Montessori at Home: Simple Activities to Build Independence in Toddlers | Antonella Roas",
+    "title_es": "Cómo Fomentar la Independencia en Niños de 2 a 5 Años con Montessori | Antonella Roas",
+    "path_en": "blog/2026-08-31-09-01-en.html",
+    "path_es": "blog/2026-08-31-09-01-es.html",
+    "url_en": "https://antonellaroas.com/blog/2026-08-31-09-01-en.html",
+    "url_es": "https://antonellaroas.com/blog/2026-08-31-09-01-es.html"
+  },
+  {
     "date": "2026-08-24",
     "title_en": "Montessori at Home: 10 Simple Activities for Toddlers Ages 1-3 | Antonella Roas",
     "title_es": "Bilingüismo Infantil en Miami: Guía Montessori para Estimular el Lenguaje | Antonella Roas",
@@ -169,14 +178,5 @@
     "path_es": "blog/2026-04-27-16-42-es.html",
     "url_en": "https://raw.githubusercontent.com/onyxarchitectural/antonella-website/main/blog/2026-04-27-16-43-en.html",
     "url_es": "https://raw.githubusercontent.com/onyxarchitectural/antonella-website/main/blog/2026-04-27-16-42-es.html"
-  },
-  {
-    "date": "2026-04-27",
-    "title_en": "Understanding Your Child's Emotional Development Milestones | Antonella Roas",
-    "title_es": "Cómo Fomentar la Independencia en Niños de 2 a 5 Años | Antonella Roas",
-    "path_en": "blog/2026-04-27-16-28-en.html",
-    "path_es": "blog/2026-04-27-16-28-es.html",
-    "url_en": "https://antonellaroas.com/blog/2026-04-27-16-28-en.html",
-    "url_es": "https://antonellaroas.com/blog/2026-04-27-16-28-es.html"
   }
 ]
